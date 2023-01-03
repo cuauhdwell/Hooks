@@ -1,0 +1,28 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "inlineSources": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+    },
+    "sourceMap": true,
+    "sourceRoot": "/src/",
+    "strict": false,
+    "strictNullChecks": false,
+    "target": "es6",
+    "watch": true
+  },
+  "exclude": [
+    "./node_modules/",
+    "./static/bundles/"
+  ]
+}
