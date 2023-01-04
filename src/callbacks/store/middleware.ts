@@ -7,9 +7,6 @@ export default () => ({ dispatch, getState }: any) => (next: Dispatch<void>) => 
   }
 
   const callAPIAction = action['CALL_API'];
-  if (typeof callAPIAction === 'undefined' || !callAPIAction.promise) {
-    return next(action);
-  }
 
   const { promise, types, successCB, failureCB, ...rest } = callAPIAction;
   const [REQUEST, SUCCESS, FAILURE] = types;
